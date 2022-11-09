@@ -12,6 +12,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serializer", "Serializer\Se
 		{DC0ACA21-BB59-4716-A8CA-EB2DADADD33F} = {DC0ACA21-BB59-4716-A8CA-EB2DADADD33F}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{E57C7327-C3FD-4F25-AC8A-EB5FA569CECC}"
+	ProjectSection(SolutionItems) = preProject
+		File.json = File.json
+	EndProjectSection
+	ProjectSection(FolderGlobals) = preProject
+		D_5_4ИСП_4Новая папка_4File_1json__JsonSchema = https://appsemble.app/api.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

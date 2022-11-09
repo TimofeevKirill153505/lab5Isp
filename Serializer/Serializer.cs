@@ -12,7 +12,13 @@ namespace Serializer
 
         public IEnumerable<Factory> DeSerializeJSON(string filename)
         {
-                
+            FileStream stream = new FileStream(filename, FileMode.Open);
+            Factory[] xxx = JsonSerializer.Deserialize<Factory[]>(stream);
+
+            if (xxx == null) throw new Exception("нуль");
+            stream.Close();
+
+            return xxx;
         }
 
         public IEnumerable<Factory> DeSerializeXML(string filename)
@@ -32,7 +38,8 @@ namespace Serializer
         public void SerializeJSON(IEnumerable<Factory> xxx, string filename)
         {
             FileStream stream = new FileStream(filename, FileMode.Open);
-            foreach (Factory factory in xxx) JsonSerializer.Serialize<Factory>(stream,factory);
+            JsonSerializer.Serialize(stream, xxx.ToArray());
+            stream.Close();
         }
     }
 }
