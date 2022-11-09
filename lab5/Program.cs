@@ -20,8 +20,16 @@ namespace lab5
 
             serializer.SerializeJSON(f, "D:/ИСП/Новая папка/File.json");
             var fs = serializer.DeSerializeJSON("D:/ИСП/Новая папка/File.json").ToArray();
-
             foreach(Factory factory in fs) Console.WriteLine(factory);
+
+            serializer.SerializeByXML(f, "D:/ИСП/Новая папка/File.xml");
+            fs = serializer.DeSerializeXML("D:/ИСП/Новая папка/File.xml").ToArray();
+            foreach (Factory factory in fs) Console.WriteLine(factory);
+
+            serializer.SerializeByLINQ(f, "D:/ИСП/Новая папка/FileLINQ.xml");
+            fs = serializer.DeSerializeByLINQ("D:/ИСП/Новая папка/FileLINQ.xml").ToArray();
+            foreach (Factory factory in fs) Console.WriteLine(factory);
+
         }
     }
 }

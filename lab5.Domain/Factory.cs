@@ -5,13 +5,14 @@ namespace lab5.Domain
     public class Factory
     {
         public string Adress
-        { get; private set; }
+        { get; set; }
 
         private List<Stock> stocks = new List<Stock>();
 
         public List<Stock> Stocks
         {
             get => stocks;
+            set => stocks = value;
         }
 
         public Factory(string adress, List<Stock> stocks)
@@ -19,6 +20,8 @@ namespace lab5.Domain
             this.Adress = adress;
             this.stocks = new List<Stock>(stocks);
         }
+
+        public Factory() { }
 
         override public string ToString()
         {

@@ -15,6 +15,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{E57C7327-C3FD-4F25-AC8A-EB5FA569CECC}"
 	ProjectSection(SolutionItems) = preProject
 		File.json = File.json
+		File.xml = File.xml
+		FileLINQ.xml = FileLINQ.xml
 	EndProjectSection
 	ProjectSection(FolderGlobals) = preProject
 		D_5_4ИСП_4Новая папка_4File_1json__JsonSchema = https://appsemble.app/api.json

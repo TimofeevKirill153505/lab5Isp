@@ -8,8 +8,8 @@ namespace lab5.Domain
 {
     public class Stock
     {
-        public int number{ get; private set; }
-        public List<string> details{ get; private set; }
+        public int number{ get; set; }
+        public List<string> details{ get; set; }
 
         public Stock(int number, List<string> details)
         {
@@ -26,5 +26,7 @@ namespace lab5.Domain
             return text;
 
         }
+
+        public Stock() { }
     }
 }
